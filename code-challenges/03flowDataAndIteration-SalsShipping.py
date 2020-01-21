@@ -50,23 +50,8 @@ def findCheapestShippingMethod(weight):
 	elif droneShippingCost<premiumGroundShippingCost and droneShippingCost<groundShippingCost:
 		return "Drone Shipping is the cheapest method, it costs "+str(droneShippingCost)+"."
 
-
-
 # What is the cheapest method of shipping a 4.8 pound package and how much would it cost?
 print(findCheapestShippingMethod(4.8))
 
 # What is the cheapest method of shipping a 41.5 pound package and how much would it cost?
 print(findCheapestShippingMethod(41.5))
-
-
-
-
-
-
-
-
-
-
-
-
-
