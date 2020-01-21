@@ -40,11 +40,71 @@ print(two)
 # prints: [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
 
 # When range() is given three arguments, first two arguments mean the same they do when giving 2 arguments and the third argument is the number by which the output numbers are being counted by.
-three=range(12,31,2)
+three=range(12,31,5)
 print(three)
-# prints: [12, 14, 16, 18, 20, 22, 24, 26, 28, 30]
+# prints: [12, 17, 22, 27]
 
 # When range() is given two arguments (and the greatest number is given first), it creates an empty list.
 four=range(29,15)
 print(four)
 # prints: []
+
+# The len() method returns the number of elements in the list used as it's argument (Len is short for length).
+print("The are "+str(len(three))+" elements in list three.")
+
+# python lists are zero-indexed
+# If you try to reference an element not in the list, you will receive the following error "IndexError: list index out of range"
+indexMax4=[1,2,3,4,5]
+# print(indexMax4[5]) - have to comment out in order to continue taking notes in this file
+# unsurprisingly this produces, error "IndexError: list index out of range"
+
+# using an index of -1 will always turn up the last element in a list
+print(indexMax4[-1])
+# produces: 5 because 5 is the last element in indexMax4
+
+# Slicing a list is when you copy a portion of one list and create another list with it. It does not alter the original list.
+# list[start:end]
+	# list - the list you're copying from
+	# start - index number to begin copying at.
+	# end - index+1 of the last index we're copying'.
+
+islands = ['barbados', 'puerto rico', 'hawaii', 'trinidad', 'hispaniola', 'cuba']
+print(islands)
+# results: ['barbados', 'puerto rico', 'hawaii', 'trinidad', 'hispaniola', 'cuba']
+
+beginning = islands[0:2]
+
+print(beginning)
+# results: ['barbados', 'puerto rico']
+
+# List Slicing Tips & Tricks:
+
+# 	start can be ommitted if we're starting at the 0 indexed element - would look like-> list[:end]
+print(str(islands[:3])+" islands[:3]")
+# 	results: ['barbados', 'puerto rico', 'hawaii'] islands[:3]
+
+# 	end can be ommitted if you want to end with the last indexed element
+print(str(islands[2:])+" - islands[2:]")
+# 	results: ['hawaii', 'trinidad', 'hispaniola', 'cuba'] - islands[2:]
+
+# 	if start is a negative number and end is omitted, you start copying the absolute value of [start], elements from the end.
+print(str(islands[-3:])+" - islands[-3:]")
+# 	results: ['trinidad', 'hispaniola', 'cuba'] - islands[-3:]
+
+# Count method can be used to search through a list and return the number of times the supplied argument is in a list.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
