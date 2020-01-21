@@ -92,6 +92,29 @@ print(str(islands[-3:])+" - islands[-3:]")
 # 	results: ['trinidad', 'hispaniola', 'cuba'] - islands[-3:]
 
 # Count method can be used to search through a list and return the number of times the supplied argument is in a list.
+print(islands.count('barbados'))
+# results:	1
+
+cities = ['LDN', 'Pari', 'Roma', 'LA', 'NY']
+print(cities)
+
+# if you try to assign your sorted list to a new variable, it will be a NoneType.
+# The sort method sorts the existing list, it doesn't create a new list so you can't store the not-new list in a new variable.
+# This attempt to assign the sorted list to a variable, will sort the list so if you re-print it you will find it is now alphabetically sorted.
+sorted_cities = cities.sort()
+print(str(sorted_cities))
+print(cities)
+
+# The sorted method is similar to sort, except it envelopes the list instead of using dot notation.
+sorted_names = sorted(names)
+
+# sorted() creates a new list, it does not sort the existing list and can be assined to a new variable.
+
+print(sorted_names)
+# results:['bob', 'dylan', 'joe', 'kayla', 'lynn', 'mel', 'tasha']
+
+print(names)
+# results: ['joe', 'mel', 'kayla', 'bob', 'dylan', 'tasha', 'lynn']
 
 
 
