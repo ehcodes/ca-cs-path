@@ -53,25 +53,3 @@ print(three_cheapest)
 # Count the number of occurrences of 2 in the prices list, and store the result in a variable called num_two_dollar_slices. Print it out.
 num_two_dollar_slices = prices.count(2)
 print("We offer " +str(num_two_dollar_slices) + " differently topped $2 slices.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

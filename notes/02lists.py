@@ -27,8 +27,6 @@ print(str(names)+" - 2nd")
 names=names+['lynn']
 print(str(names)+" - 3rd")
 
-# The built-in function, range(), creates a list of consecutive numbers.
-
 # When range() is given a single argument, it creates a list with consecutive numbers starting at 0 and ending one number below the argument.
 one = range(12)
 print(one)
@@ -116,7 +114,20 @@ print(sorted_names)
 print(names)
 # results: ['joe', 'mel', 'kayla', 'bob', 'dylan', 'tasha', 'lynn']
 
+# tuples are immutable objects similar to lists, tuples are sequences.
+# tuples use parenthesis, not square brackets.
+my_info = ('engrid',25,'alive')
 
+# tuple can be unpacked (ex. below)
+name, age, status = my_info
+print(name) # prints 'engrid'
+print(age) # prints 25
+print(status) # prints 'alive'
+
+# single element tuples have to use a trailing comma, otherwise it's just being stored as a varaible.
+single_element_tuple = (4,)
+vs
+failed_to_become_tuple = (4)
 
 
 
