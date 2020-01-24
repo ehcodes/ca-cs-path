@@ -29,7 +29,6 @@ for obj in sequence:
     print(obj)
 
 # while loops
-
 all_orangutans = ["Al", "Edward", "Riza", "Hawkeye", "Lina", "Freezing", "Roy", "Mustang", "Full Metal"]
 orangutans_freed = []
 
@@ -59,47 +58,10 @@ greetings = [word for word in words if words[0] == 'hello']
 
 # Other Examples:
 duration_in_days = [61, 64, 56, 44, 58, 70, 63, 63, 57]
-duration_msg = [msg + " it's been more than 60 days." for msg in duration_in_days if duration_in_days > 60]
-print(can_ride_coaster)
+duration_msg = [str(days) + " days passed." for days in duration_in_days if days > 60]
 
+print(duration_in_days)
+# result: [61, 64, 56, 44, 58, 70, 63, 63, 57]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print(duration_msg)
+# result: ['61 days passed.', '64 days passed.', '70 days passed.', '63 days passed.', '63 days passed.']
