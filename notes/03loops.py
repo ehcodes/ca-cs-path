@@ -47,7 +47,7 @@ print(orangutans_freed)
 people = ['person1','person2','person3','person4']
 person4=people.pop()
 
-# list comprehensions
+# list comprehensions - not in the list file because it's a for loop that creates a list, not a list.
 # shorthand way of creating lists, you can avoid first creating an empty list by using list comprehensions.
 # The two code snippets below do the same thing - they create a list called greetings pulled from the list words.
 
@@ -56,6 +56,11 @@ for word in words:
     usernames.append(word)
 
 greetings = [word for word in words if words[0] == 'hello']
+
+# Other Examples:
+duration_in_days = [61, 64, 56, 44, 58, 70, 63, 63, 57]
+duration_msg = [msg + " it's been more than 60 days." for msg in duration_in_days if duration_in_days > 60]
+print(can_ride_coaster)
 
 
 
